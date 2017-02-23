@@ -29,16 +29,21 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 375, height: 300)
 
-// Drawing lines
+// Setting up line colors and widths
 canvas.defaultLineWidth = 75
-canvas.fillColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
+
+canvas.fillColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 100.0)
 
 canvas.lineColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
 
 canvas.borderColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
-canvas.drawLine(fromX: 75, fromY: 225, toX: 75, toY: 75)
-canvas.drawEllipse(centreX: 75, centreY: 225, width: 74, height: 74, borderWidth: 0)
-canvas.drawEllipse(centreX: 75, centreY: 75, width: 74, height: 74, borderWidth: 0)
+// Drawing lines
+canvas.drawLine(fromX: 75, fromY: 175, toX: 75, toY: 75)
+canvas.drawLine(fromX: 75, fromY: 175, toX: 150, toY: 75)
+//new colors
+canvas.lineColor = Color(hue: -158.0, saturation: 100.0, brightness: 89.0, alpha: 60.0)
+canvas.drawLine(fromX: 149, fromY: 75, toX: 225, toY: 175)
+canvas.drawLine(fromX: 225, fromY: 175, toX: 225, toY: 75)
 
 
 /*:
