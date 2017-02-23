@@ -27,9 +27,18 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 300, height: 300)
+let canvas = Canvas(width: 375, height: 300)
 
-// Replace this comment and add your code below...
+// Drawing lines
+canvas.defaultLineWidth = 75
+canvas.fillColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
+
+canvas.lineColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
+
+canvas.borderColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alpha: 60.0)
+canvas.drawLine(fromX: 75, fromY: 225, toX: 75, toY: 75)
+canvas.drawEllipse(centreX: 75, centreY: 225, width: 74, height: 74, borderWidth: 0)
+canvas.drawEllipse(centreX: 75, centreY: 75, width: 74, height: 74, borderWidth: 0)
 
 
 /*:
