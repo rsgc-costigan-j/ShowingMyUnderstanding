@@ -20,7 +20,7 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // random number gen
-var x = random(from: 0, toButNotIncluding: 3)
+let x = random(from: 0, toButNotIncluding: 3)
 if x == 1{
     //setting random fill
     canvas.fillColor = Color.black
