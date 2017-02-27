@@ -21,6 +21,16 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+//added rainbow lines for A E S T H E T I C (I HAD TO PUT THESE FIRST AS TO NOT INTERFERE WITH THE REST OF THE DRAWING)
+for x in stride(from: 0, through: 300, by: 1)
+{
+    
+    canvas.lineColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 100)
+    canvas.drawLine(fromX: x, fromY: x-100, toX: 0, toY: x+10)
+    
+}
+
+
 //looping a variable y for y position
 for y in stride(from: 40, through: 240, by: 100){
     
@@ -48,6 +58,7 @@ for y in stride(from: 66, through: 340, by: 100){
         canvas.drawLine(fromX: x, fromY: y, toX: x*y, toY: x/y)
     }
 }
+
 
 
 /*:
