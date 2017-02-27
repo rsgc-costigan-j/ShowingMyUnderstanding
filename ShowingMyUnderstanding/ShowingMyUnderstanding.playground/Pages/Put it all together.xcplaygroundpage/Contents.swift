@@ -21,7 +21,18 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+for y in stride(from: 40, through: 240, by: 100){
+    for x in stride(from: 40, through: 300, by: 50){
+        canvas.fillColor = Color(hue: y, saturation: 100, brightness: 100, alpha: 50)
+        canvas.drawEllipse(centreX: x, centreY: y, width: x, height: y)
+    }
+}
+for y in stride(from: 66, through: 340, by: 100){
+    for x in stride(from: 15, through: 300, by: 50){
+        canvas.lineColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 60)
+        canvas.drawLine(fromX: x, fromY: y, toX: x*y, toY: x/y)
+    }
+}
 
 
 /*:
