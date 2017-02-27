@@ -21,15 +21,30 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
+//looping a variable y for y position
 for y in stride(from: 40, through: 240, by: 100){
+    
+    //looping a variable x for x position
     for x in stride(from: 40, through: 300, by: 50){
+        
+        //changing fill colour
         canvas.fillColor = Color(hue: y, saturation: 100, brightness: 100, alpha: 50)
+        
+        //drawing shapes
         canvas.drawEllipse(centreX: x, centreY: y, width: x, height: y)
     }
 }
+
+//same thing here with the looping variables
 for y in stride(from: 66, through: 340, by: 100){
+    
+    //here too
     for x in stride(from: 15, through: 300, by: 50){
+        
+        //changing line colour
         canvas.lineColor = Color(hue: x, saturation: 100, brightness: 100, alpha: 60)
+        
+        //drawing lines
         canvas.drawLine(fromX: x, fromY: y, toX: x*y, toY: x/y)
     }
 }
