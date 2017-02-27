@@ -27,7 +27,7 @@ import Cocoa
 import PlaygroundSupport
 
 // Create canvas
-let canvas = Canvas(width: 375, height: 300)
+let canvas = Canvas(width: 300, height: 300)
 
 // Setting up line colors and widths
 canvas.defaultLineWidth = 75
@@ -40,7 +40,7 @@ canvas.borderColor = Color(hue: 189.0, saturation: 100.0, brightness: 76.0, alph
 // Drawing lines
 canvas.drawLine(fromX: 75, fromY: 175, toX: 75, toY: 75)
 canvas.drawLine(fromX: 75, fromY: 175, toX: 150, toY: 75)
-//new colors
+//new colors and lines
 canvas.lineColor = Color(hue: -158.0, saturation: 100.0, brightness: 89.0, alpha: 60.0)
 canvas.drawLine(fromX: 149, fromY: 75, toX: 225, toY: 175)
 canvas.drawLine(fromX: 225, fromY: 175, toX: 225, toY: 75)

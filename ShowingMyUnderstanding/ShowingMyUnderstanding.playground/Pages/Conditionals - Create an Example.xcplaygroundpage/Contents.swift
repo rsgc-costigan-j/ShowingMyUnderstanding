@@ -19,8 +19,24 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this command and add your code below...
+// random number gen
+var x = random(from: 0, toButNotIncluding: 3)
+if x == 1{
+    //setting random fill
+    canvas.fillColor = Color.black
+    
+}
+else{
+    canvas.fillColor = Color.red}
 
+for x in stride(from: 0, through: 5, by: 1){
+var b = random(from: 0, toButNotIncluding: 300)
+var y = random(from: 0, toButNotIncluding: 300)
+var z = random(from: 0, toButNotIncluding: 300)
+var c = random(from: 0, toButNotIncluding: 300)
+
+canvas.drawRectangle(centreX: b, centreY: y, width: z, height: c)
+}
 /*:
  ## Template code
  The code below is necessary to see results in the Assistant Editor at right. Please do not remove.
