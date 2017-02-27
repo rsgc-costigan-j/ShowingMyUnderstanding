@@ -58,7 +58,15 @@ for y in stride(from: 66, through: 340, by: 100){
         canvas.drawLine(fromX: x, fromY: y, toX: x*y, toY: x/y)
     }
 }
-
+var x = random(from: 0, toButNotIncluding: 2)
+x
+if x == 0 {
+    canvas.fillColor = Color.red
+    canvas.drawRectangle(centreX: 150, centreY: 150, width: 190, height: 50)
+    canvas.textColor = Color.white
+    canvas.drawText(message: "Supreme", size: 35, x: 80, y: 130)
+    
+}
 
 
 /*:
