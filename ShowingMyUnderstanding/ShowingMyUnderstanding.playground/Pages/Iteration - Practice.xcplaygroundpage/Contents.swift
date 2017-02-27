@@ -29,7 +29,21 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+for y in stride(from: 40, through: 240, by: 100){
+    for x in stride(from: 40, through: 300, by: 50){
+        canvas.drawRectangle(centreX: x, centreY: y, width: 25, height: 6)
+    }
+    }
+for y in stride(from: 66, through: 340, by: 100){
+    for x in stride(from: 15, through: 300, by: 50){
+        canvas.drawRectangle(centreX: x, centreY: y, width: 25, height: 6)
+    }
+}
+
+
+
+
+   
 
 
 /*:
